@@ -1,0 +1,40 @@
+html,
+body {
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family;font-family: 'Poller One', cursive;
+font-family: 'Roboto Condensed', sans-serif; ;
+
+  .container {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 10rem 2rem 2fr 10rem 1fr 1fr 2rem 1fr;
+
+    grid-template-areas:
+      "header"
+      "nav"
+      "name"
+      "img"
+      "booking_hours"
+      "map"
+      "footer_nav"
+      "footer";
+  }
+
+  @media (min-width: 380px) {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 9rem 3rem 22.5rem 22.5rem 3rem 22.5rem 22.5rem 2rem 15rem;
+
+    grid-template-areas:
+      "header header header header header header header header"
+      "sidebar_left home_title home_title home_title home_title home_title home_title sidebar_right"
+      "sidebar_left main_start main_start main_start main_start main_start main_start sidebar_right"
+      "sidebar_left main_end main_end main_end main_end main_end main_end main_end sidebar_right"
+      "sidebar_left mid_title mid_title mid_title mid_title mid_title mid_title sidebar_right"
+      "sidebar_left content_start content_start content_start content_start content_start content_start sidebar_right"
+      "sidebar_left content_end content_end content_end content_end content_end content_end sidebar_right"
+      "sidebar_left footer_start footer_start footer_start footer_start footer_start footer_start sidebar_right"
+      "sidebar_left footer_end footer_end footer_end footer_end footer_end footer_end sidebar_right";
+  }
+}
