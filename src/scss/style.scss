@@ -4,11 +4,14 @@ body {
   background: #ffffff;
   font-family: "Poller One", cursive;
   font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: flex-end;
 
   .container {
     display: grid;
-    grid-template-columns: 380px;
-    grid-template-rows: 10rem 2rem 2fr 10rem 1fr 1fr 2rem 1fr;
+    grid-template-columns: 400px;
+    grid-template-rows: 10rem 2rem auto 10rem 1fr 1fr 2rem 1fr;
 
     grid-template-areas:
       "header"
@@ -19,6 +22,21 @@ body {
       "map"
       "footer_nav"
       "footer";
+  }
+
+  .header {
+    background-color: gray;
+    grid-area: header;
+  }
+
+  .header--nav {
+    background-color: gray;
+    grid-area: nav;
+  }
+
+  menu--container {
+    background-color: white;
+    grid-area: name;
   }
 
   @media (min-width: 380px) {
