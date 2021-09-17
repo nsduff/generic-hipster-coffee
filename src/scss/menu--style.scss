@@ -1,0 +1,178 @@
+html,
+body {
+  box-sizing: border-box;
+  background: white;
+  font-family: "Poller One", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .container_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: fit-content;
+
+      padding-left: 100%;
+      padding-right: 100%;
+      padding-bottom: 1%;
+      padding-top: 1%;
+
+      background: rgb(243, 243, 243);
+      img {
+        height: 100px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding-left: 1.2rem;
+        font-size: 0.8rem;
+      }
+    }
+    .home {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .home--title {
+      text-align: left;
+      width: 100%;
+    }
+    h1 {
+      font-weight: 300;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
+.menu--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.menu--container {
+  display: grid;
+  grid-template-columns: 200px 50px 200px 50px;
+  grid-template-rows: 10rem 10rem 10rem;
+  grid-template-areas:
+    "expressp espresso_prices filter filer_prices"
+    "iced iced_prices hot hot_price"
+    "lemonades lemon_price water water_price";
+
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.espresso {
+  grid-area: expressp;
+  ul {
+    width: auto;
+    li {
+      width: 45px;
+    }
+  }
+}
+.espresso--prices {
+  grid-area: espresso_prices;
+  width: 40px;
+}
+.filter {
+  grid-area: filter;
+}
+.filter--prices {
+  grid-area: filer_prices;
+}
+.iced {
+  grid-area: iced;
+}
+.iced--prices {
+  grid-area: iced_prices;
+}
+.eat {
+  grid-area: hot;
+}
+.eat--prices {
+  grid-area: hot_price;
+}
+
+.lemonade {
+  grid-area: lemonades;
+}
+.lemonade--prices {
+  grid-area: lemon_price;
+}
+.water {
+  grid-area: water;
+}
+.water--prices {
+  grid-area: water_prices;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 5rem;
+  padding-left: 100%;
+  padding-right: 100%;
+  background: rgb(51, 57, 63);
+
+  .footer--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    p {
+      color: #fff;
+    }
+  }
+  a {
+    color: rgb(3, 147, 242);
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  H4 {
+    color: rgb(206, 212, 218);
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+}
+.black_footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3rem;
+  background: black;
+  padding-left: 100%;
+  padding-right: 100%;
+}
